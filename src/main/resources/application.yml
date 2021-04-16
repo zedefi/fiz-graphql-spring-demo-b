@@ -1,0 +1,35 @@
+graphql:
+  servlet:
+    contextSetting: PER_REQUEST_WITH_INSTRUMENTATION
+    #    corsEnabled: false
+    #    enabled: true
+    exception-handlers-enabled: true
+    tracingEnabled: false
+    mapping: /graphql
+    enabled: true
+    corsEnabled: false
+    websocket:
+      enabled: true
+      path: /subscriptions
+    subscriptions:
+      websocket:
+        path: /subscriptions
+
+
+#logging:
+#  level:
+#    root: DEBUG
+
+#graphiql:
+#  mapping: /graphiql
+#  base-path: /admin/static/
+#  endpoint:
+#    graphql: /api/graphql
+#    subscriptions: /subscriptions
+#  subscriptions:
+#    timeout: 30
+#    reconnect: false
+#  pageTitle: GraphiQL
+#  cdn:
+#    enabled: false
+#    version: 0.13.0
